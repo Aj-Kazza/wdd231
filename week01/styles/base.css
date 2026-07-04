@@ -3,6 +3,105 @@ blueish: #258ea6
 peach: #e2b1b1
 
 
-
-
 ----------------- */
+header {
+  display: grid;
+  grid-template-columns: 24px auto 44px;
+  align-items: end;
+  padding: 10px;
+  border-bottom: solid 1px #ddd;
+  column-gap: 8px;
+  align-items: center;
+}
+
+header img {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 2px;
+}
+
+header span {
+  font-size: 1.2rem;
+  color: #258ea6;
+}
+
+/** burgr **/
+
+.hamburger {
+  background: none;
+  border: none;
+  color: #258ea6;
+  cursor: pointer;
+  font-size: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::before {
+  content: "\2630";
+}
+
+.hamburger.show::before {
+  content: "\00d7";
+}
+
+/** nav **/
+.navigation {
+  display: none;
+}
+.navigation.show {
+  display: block;
+}
+
+.navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation a {
+  display: block;
+  padding: 1rem 10px;
+  color: #258ea6;
+  text-decoration: none;
+  border-bottom: solid 1px #ddd;
+}
+
+.navigation a:hover {
+  background-color: #e2b1b1;
+}
+
+.navigation li.current {
+  background-color: #ddd;
+}
+
+/** footer **/
+footer {
+  background-color: #eee;
+  padding: 1rem 10px;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  column-gap: 8px;
+}
+
+.social a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border: #ccc solid 1px;
+  border-radius: 100%;
+}
+
+.social img {
+  width: 22px;
+  height: 22px;
+}
+
+.social a:hover {
+  background-color: #e2b1b1;
+}
