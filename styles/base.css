@@ -1,0 +1,182 @@
+:root {
+  --color1: #2902c7;
+  --color2: #316599;
+  --color3: #002659;
+  --color4: #d4fffb;
+  --heading: "Roboto", sans-serif;
+  --body: "Fira Sans", sans-serif;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 24px auto 44px;
+  align-items: end;
+  padding: 10px;
+  border-bottom: solid 1px #ddd;
+  column-gap: 8px;
+  align-items: center;
+  background-color: #eee;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--heading);
+}
+
+body {
+  font-family: var(--body);
+}
+
+header img {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 2px;
+}
+
+header span {
+  font-size: 1.2rem;
+  color: var(--color3);
+}
+
+/** burgr **/
+
+.hamburger {
+  background: none;
+  border: none;
+  color: var(--color3);
+  cursor: pointer;
+  font-size: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::before {
+  content: "\2630";
+}
+
+.hamburger.show::before {
+  content: "\00d7";
+}
+
+/** nav **/
+.navigation {
+  display: none;
+}
+.navigation.show {
+  display: block;
+}
+
+.navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation a {
+  display: block;
+  padding: 1rem 15px;
+  color: var(--color3);
+  text-decoration: none;
+  border-bottom: solid 1px #ddd;
+}
+
+.navigation a:hover {
+  background-color: var(--color4);
+}
+
+.navigation li.current {
+  background-color: #ddd;
+}
+
+/** footer **/
+footer {
+  background-color: #eee;
+  padding: 1rem 10px;
+  text-align: center;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  column-gap: 8px;
+}
+
+.social a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+}
+
+.social img {
+  width: 40px;
+  height: 40px;
+}
+
+.social a:hover {
+  background-color: var(--color4);
+}
+
+/** main **/
+main {
+  padding: 5px 15px;
+}
+
+section p {
+  padding: 5px;
+}
+
+section h2 {
+  margin-top: 0;
+  text-align: center;
+  color: white;
+  background-color: var(--color2);
+}
+
+section img {
+  width: 200px;
+  height: auto;
+}
+.profile {
+  text-align: center;
+}
+
+section .coursesBtn {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 10px;
+  padding: 0 5px;
+}
+
+.courses {
+  display: block;
+  text-align: center;
+  padding: 10px;
+}
+
+.courses div {
+  border: #ccc 1px solid;
+  padding: 5px;
+  margin: 5px;
+}
+
+.courses .completed {
+  background-color: var(--color4);
+}
+.completed::before {
+  content: "\2B50";
+}
+
+#credits {
+  text-align: center;
+}
+
+.about,
+.profile {
+  background-color: #fafafa;
+}

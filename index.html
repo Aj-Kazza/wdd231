@@ -1,23 +1,88 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WDD 231 Course Home Page || Ari-John Katia</title>
+    <meta
+      name="description"
+      content="Course home page website for the course of WDD 231 BYU-Idaho Pathway Online"
+    />
+    <meta name="author" content="Ari-John Katia" />
+
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <img src="" alt="site logo" width="512" height="512">
-        <span>Site Name</span>
-        <button id="ham-btn" class="ham-btn"></button>
+      <img src="images/home.svg" alt="site logo" width="512" height="512" />
+      <span>Site Title</span>
+      <button id="ham-btn" class="hamburger"></button>
     </header>
-
-    <body>
-        
-    </body>
-
+    <nav id="nav-bar" class="navigation">
+      <ul>
+        <li class="current">
+          <a href="#">Home</a>
+        </li>
+        <li><a href="#">Chamber Project</a></li>
+        <li><a href="#">Final Project</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h1>Home</h1>
+      <section class="about">
+        <h2>About Me</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum
+          perspiciatis amet sunt consectetur vitae corporis consequatur at?
+          Excepturi, exercitationem, aliquam commodi corrupti quos veritatis ea
+          deleniti doloremque nihil, dolorum eius. Facilis provident distinctio
+          iure praesentium aliquid fugit omnis voluptatum nemo, mollitia, atque,
+          ad maiores quas voluptatem officiis molestias nesciunt aperiam
+          consequatur necessitatibus cum laborum delectus. Hic inventore
+          molestiae minima ab?
+        </p>
+      </section>
+      <section class="profile">
+        <h2>Student Photo</h2>
+        <img src="images/prfile.jpg" alt="" />
+      </section>
+      <section class="course">
+        <h2>Web Certification Courses</h2>
+        <div class="coursesBtn">
+          <button id="all">ALL</button><button id="cse">CSE</button
+          ><button id="wdd">WDD</button>
+        </div>
+        <div class="courses"></div>
+        <p id="credits"></p>
+      </section>
+    </main>
+    <div class="social">
+      <a href="" target="_blank"
+        ><img src="images/github.svg" alt="github" width="16" height="16"
+      /></a>
+      <a href="" target="_blank"
+        ><img src="images/linkedin.svg" alt="linkedin" width="16" height="16"
+      /></a>
+      <a href="" target="_blank"
+        ><img src="images/twitter.svg" alt="twitter" width="16" height="16"
+      /></a>
+    </div>
     <footer>
-
+      <p>&copy <span id="year"></span>|| Ari-John Katia || Tarawa, Kiribati</p>
+      <span id="lastModified"></span>
     </footer>
-</body>
+  </body>
 </html>
