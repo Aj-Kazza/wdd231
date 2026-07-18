@@ -1,0 +1,67 @@
+{
+  "members": [
+    {
+      "name": "Pintech",
+      "address": "Abarao",
+      "phone": "79045882",
+      "website": "https://www.pintech.ki",
+      "image": "./images/pintech.png",
+      "level": 2,
+      "type": "Electronics"
+    },
+    {
+      "name": "Betty Trading",
+      "address": "Ambo",
+      "phone": "79053442",
+      "website": "https://www.bettytrading.ki",
+      "image": "./images/betty.png",
+      "level": 3,
+      "type": "Wholesale/Hardware"
+    },
+    {
+      "name": "JMR",
+      "address": "Abarao",
+      "phone": "70999821",
+      "website": "https://www.jmrgroup.ki",
+      "image": "./images/jmr.png",
+      "level": 3,
+      "type": "Wholesale"
+    },
+    {
+      "name": "Tanini",
+      "address": "Bikenibeu",
+      "phone": "79025125",
+      "website": "https://www.tentanini.ki",
+      "image": "./images/tanini.png",
+      "level": 2,
+      "type": "Electronics"
+    },
+    {
+      "name": "IG Garden",
+      "address": "Temwaiku",
+      "phone": "79045624",
+      "website": "https://www.iggarden.ki",
+      "image": "./images/garden.png",
+      "level": 1,
+      "type": "Non-Profit: Produce"
+    },
+    {
+      "name": "Coconect",
+      "address": "Bairiki",
+      "phone": "79000122",
+      "website": "https://www.coconect.ki",
+      "image": "./images/coconect.png",
+      "level": 2,
+      "type": "Communications"
+    },
+    {
+      "name": "Starmart",
+      "address": "Betio",
+      "phone": "79077234",
+      "website": "https://www.starmart.ki",
+      "image": "./images/starmart.png",
+      "level": 1,
+      "type": "Retail"
+    }
+  ]
+}

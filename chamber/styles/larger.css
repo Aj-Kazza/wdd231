@@ -1,0 +1,61 @@
+@media screen and (min-width: 640px) {
+  header {
+    grid-template-columns: 1fr 2fr 1fr 5fr;
+  }
+  #burger {
+    display: none;
+  }
+  #topnav {
+    display: block;
+    grid-column: 4;
+    grid-row: 1;
+    padding: 20px 0;
+  }
+  #topnav a {
+    border-left: 2px solid #fae392;
+    padding: 5px;
+  }
+  #topnav a:nth-child(4) {
+    border-right: 2px solid #fae392;
+  }
+
+  header #tarawa {
+    font-size: 1.2rem;
+  }
+  header #chamber {
+    font-size: 1.6rem;
+  }
+
+  /*-------DIRECTORY-------*/
+  #directory .list section {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr 1fr;
+  }
+
+  #directory {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /*-------FOOTER----------*/
+
+  footer .copyright .seps {
+    display: flex;
+  }
+  footer .copyright {
+    display: flex;
+    border-top: 1px black solid;
+    font-size: 0.8rem;
+  }
+  footer .footermain {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  footer .address {
+    padding-left: 50%;
+    padding-top: 5%;
+  }
+  footer .bottomlogo {
+    padding-right: 3 0%;
+  }
+}

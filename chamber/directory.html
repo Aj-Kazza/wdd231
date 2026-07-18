@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Tarawa Chamber of Commerce Directory" />
+    <meta
+      property="og:description"
+      content="Explore members of the Tarawa Chamber of Commerce."
+    />
+    <meta
+      name="description"
+      content="Directory page for the Tarawa Chamber of Commerce website featuring local chamber members."
+    />
+    <meta name="author" content="Ari-John Katia" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://aj-kazza.github.io/wdd231/chamber/images/chamber-preview.webp"
+    />
+    <meta
+      property="og:url"
+      content="https://aj-kazza.github.io/wdd231/chamber/directory.html"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+    <link rel="icon" href="favicon.ico" />
+    <title>Chamber of Commerce - Tarawa || Directory</title>
+  </head>
+
+  <body>
+    <header>
+      <picture class="logo">
+        <img
+          src="images/birb.png"
+          alt="Tarawa Chamber of Commerce Logo"
+          loading="eager"
+        />
+      </picture>
+      <div>
+        <span id="chamber">Chamber of Commerce</span>
+        <br />
+        <span id="tarawa">Tarawa</span>
+      </div>
+      <div class="socials">
+        <a href="https://www.facebook.com"
+          ><img src="images/fb.png" alt="Facebook"
+        /></a>
+        <a href="https://www.linkedin.com"
+          ><img src="images/lin.png" alt="LinkedIn"
+        /></a>
+      </div>
+      <button id="burger" aria-label="Open navigation menu"></button>
+      <nav id="topnav">
+        <a href="index.html">Home</a>
+        <a href="discover.html">Discover</a>
+        <a href="directory.html" class="active">Directory</a>
+        <a href="join.html">Join</a>
+      </nav>
+    </header>
+    <main id="directory">
+      <h1>Directory</h1>
+      <div class="menu">
+        <button id="grid" aria-label="Display members as cards">⏹️Grid</button>
+        <button id="list" aria-label="Display members as lists">📄List</button>
+      </div>
+      <hr />
+      <article class="grid" id="cards"></article>
+    </main>
+    <footer>
+      <div class="footermain">
+        <div class="bottomlogo">
+          <p>Chamber of Commerce: Tarawa</p>
+          <p>Apartment 2B 123 Complex Row</p>
+          <p>Bairiki, Tarawa KI0107</p>
+        </div>
+        <div class="address">
+          <p>info@tarawacc.ki</p>
+          <p>+(686) 755 35355</p>
+          <a href="https://maps.app.goo.gl/vZRfyVnbYZbQyUVP9" target="_blank"
+            >📍123 Complex Row</a
+          >
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>&copy; <span id="thisyear"></span> Tarawa Chamber</p>
+        <p class="seps">|</p>
+        <p><b>Ari-John Katia</b></p>
+        <p class="seps">|</p>
+        <p>WDD 231 Project</p>
+        <p class="seps">|</p>
+        <p>Last Updated: <span id="currentdate"></span></p>
+        <p class="seps">|</p>
+        <p>Days Since Last Visit: <span id="visits"></span></p>
+      </div>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/burger.js"></script>
+    <script src="scripts/directory.js"></script>
+    <script src="scripts/directory2.js"></script>
+  </body>
+</html>
