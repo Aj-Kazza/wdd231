@@ -31,7 +31,7 @@ header {
   height: auto;
   margin-bottom: 0;
   margin-top: 0;
-  grid-template-columns: 1fr 3fr 1fr 1fr;
+  grid-template-columns: 1fr 3fr 1fr;
 }
 header #tarawa {
   margin-top: 0;
@@ -68,13 +68,10 @@ footer p {
 }
 .socials {
   align-items: center;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 10px;
-  grid-gap: 10px;
 }
 .socials img {
-  width: 100%;
+  width: 40px;
+  height: auto;
 }
 #burger {
   height: 100%;
@@ -165,6 +162,7 @@ main {
 /*--------directory.html---------------*/
 #directory {
   display: block;
+  margin: 10px;
 }
 
 #directory h1 {
@@ -194,20 +192,27 @@ main {
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0.5rem;
   background-color: #eee;
+  box-shadow: var(--foregrounddark) 1px 1px 5px;
+}
+
+#directory section:hover {
+  box-shadow: var(--accents) 1px 1px 5px;
 }
 
 #directory .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 15px;
+  grid-gap: 10px;
   align-items: stretch;
+  row-gap: 30px;
 }
 
 #directory .grid section {
-  text-align: center;
+  text-align: left;
   flex-direction: column;
   height: 100%;
-  min-height: 220px;
+  min-height: 20px;
+  padding: 10px;
 }
 
 #directory .grid section > * {
@@ -215,13 +220,17 @@ main {
 }
 
 #directory .grid .member-name {
-  font-family: Roboto;
-  background-color: var(--);
+  font-family: Roboto, sans-serif;
+  font-size: 30px;
+  padding: 10px;
+  border-bottom: var(--border) 1px solid;
+  margin-bottom: 10px;
 }
 
 #directory .grid img {
   border: 1px solid var(--foregroundlight);
   box-shadow: 0 0 10px var(--shadow);
+  float: right;
 }
 
 #directory .list {
