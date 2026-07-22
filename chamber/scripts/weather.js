@@ -1,5 +1,5 @@
 const currentTemp = document.querySelector("#current-temp");
-const weatherIcon = document.querySelector("#weather-icon");
+const weatherFigure = document.querySelector(".weather-icon");
 const captionDesc = document.querySelector("figcaption");
 
 const windSpeed = document.querySelector("#wind-speed");
@@ -44,20 +44,29 @@ async function apiForecast() {
 }
 
 function displayResults(data) {
-  currentTemp.innerHTML = `${data.main.temp}&deg;C`;
+  currentTemp.innerHTML = `${data.main.temp}&deg;F`;
 
-  const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+  const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
 
   const desc = data.weather[0].description;
 
-  weatherIcon.src = iconsrc;
-  weatherIcon.alt = desc;
+  // Create image
+  const weatherImg = document.createElement("img");
 
-  captionDesc.textContent = desc;
+  weatherImg.setAttribute("src", iconsrc);
+  weatherImg.setAttribute("alt", desc);
 
-  windSpeed.textContent = `${data.wind.speed} km/h`;
+  // Create caption
+  const caption = document.createElement("figcaption");
 
-  windChill.textContent = calculateWindChill(data.main.temp, data.wind.speed);
+  caption.textContent = desc;
+
+  // Clear old content
+  weatherFigure.innerHTML = "";
+
+  // Add elements into figure
+  weatherFigure.appendChild(weatherImg);
+  weatherFigure.appendChild(caption);
 }
 
 function displayForecast(data) {
