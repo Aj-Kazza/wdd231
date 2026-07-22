@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Chamber of Commerce - Tarawa || Home</title>
+
+    <meta
+      name="description"
+      content="Homepage for the Tarawa Chamber of Commerce featuring local events, weather, and member spotlights."
+    />
+    <meta name="author" content="Ari-John Katia" />
+
+    <meta property="og:title" content="Tarawa Chamber of Commerce" />
+    <meta
+      property="og:description"
+      content="Discover local businesses, events, and opportunities with the Tarawa Chamber of Commerce."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://aj-kazza.github.io/wdd231/chamber/images/chamber-preview.webp"
+    />
+    <meta
+      property="og:url"
+      content="https://aj-kazza.github.io/wdd231/chamber/index.html"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="icon" type="image/png" href="images/favicon-16x16.png" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+    <link rel="manifest" href="site.webmanifest" />
+
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/burger.js" defer></script>
+    <script src="scripts/visits.js" defer></script>
+
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <picture class="logo">
+        <img
+          src="images/birb.png"
+          alt="Tarawa Chamber of Commerce Logo"
+          loading="eager"
+        />
+      </picture>
+
+      <div>
+        <span id="chamber">Chamber of Commerce</span>
+        <br />
+        <span id="tarawa">Tarawa</span>
+      </div>
+
+      <button id="burger" aria-label="Open navigation menu"></button>
+
+      <nav id="topnav">
+        <a href="index.html" class="active">Home</a>
+        <a href="discover.html">Discover</a>
+        <a href="directory.html">Directory</a>
+        <a href="join.html">Join</a>
+      </nav>
+    </header>
+
+    <main id="home">
+      <div class="hero-image">
+        <picture>
+          <source
+            media="(max-width: 640px)"
+            srcset="images/chamber-preview.webp"
+          />
+          <img
+            src="images/tarawa.webp"
+            alt="View of a beach in Tarawa"
+            loading="eager"
+          />
+        </picture>
+
+        <div class="hero-text">
+          <h1>Chamber of Commerce - Tarawa</h1>
+          <a class="join" href="join.html">Join Chamber</a>
+        </div>
+      </div>
+
+      <section class="event">
+        <h2>Event</h2>
+
+        <div class="event-image">
+          <img
+            src="images/maneaba.webp"
+            alt="Traditional Maneaba building"
+            loading="lazy"
+          />
+
+          <div class="event-text">
+            <h3>Thatching Ceremony – ✨ Maiana M'aneaba, Bairiki</h3>
+
+            <p>
+              Join us for the roof laying ceremony for the Maiana M'aneaba in
+              Bikenibeu this Saturday at 10:00 AM.
+              <a href="#">More info...</a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="weather">
+        <h2>Current Weather</h2>
+
+        <span id="current-temp"></span>
+
+        <figure>
+          <img id="weather-icon" src="" alt="" />
+          <figcaption></figcaption>
+        </figure>
+
+        <div>
+          <p>Wind Speed: <span id="wind-speed"></span></p>
+          <p>Wind Chill: <span id="wind-chill"></span></p>
+        </div>
+
+        <h3>3-Day Forecast</h3>
+
+        <div class="forecast">
+          <div class="forecast-card">
+            <p class="forecast-day">Tomorrow</p>
+            <p class="forecast-temp" id="day1"></p>
+          </div>
+
+          <div class="forecast-card">
+            <p class="forecast-day">Day 2</p>
+            <p class="forecast-temp" id="day2"></p>
+          </div>
+
+          <div class="forecast-card">
+            <p class="forecast-day">Day 3</p>
+            <p class="forecast-temp" id="day3"></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="spotlight">
+        <h2>Member Spotlights</h2>
+
+        <div id="spotlights"></div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footermain">
+        <div class="bottomlogo">
+          <p>Chamber of Commerce: Tarawa</p>
+          <p>Apartment 2B 123 Complex Row</p>
+          <p>Bairiki, Tarawa KI0107</p>
+        </div>
+
+        <div class="address">
+          <p>info@tarawacc.ki</p>
+          <p>+(686) 755 35355</p>
+
+          <a
+            href="https://maps.app.goo.gl/vZRfyVnbYZbQyUVP9"
+            target="_blank"
+            rel="noopener"
+          >
+            📍123 Complex Row
+          </a>
+
+          <div class="socials">
+            <a href="https://www.facebook.com" target="_blank" rel="noopener">
+              <img src="images/facebook.png" alt="Facebook" />
+            </a>
+
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener">
+              <img src="images/linkedin.png" alt="LinkedIn" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>&copy; <span id="thisyear"></span> Tarawa Chamber</p>
+        <p class="seps">|</p>
+        <p><strong>Ari-John Katia</strong></p>
+        <p class="seps">|</p>
+        <p>WDD 231 Project</p>
+        <p class="seps">|</p>
+        <p>Last Updated: <span id="currentdate"></span></p>
+        <p class="seps">|</p>
+        <p>Days Since Last Visit: <span id="visits"></span></p>
+      </div>
+    </footer>
+  </body>
+</html>
