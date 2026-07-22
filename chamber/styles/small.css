@@ -325,8 +325,8 @@ main {
   bottom: 30px;
   right: 30px;
 
-  background: var(--accents);
-  color: var(--foregroundlight);
+  background: var(--highlight);
+  color: var(--dark);
   padding: 0.75rem 1.5rem;
   text-decoration: none;
   border-radius: 8px;
@@ -334,7 +334,7 @@ main {
 }
 
 .join:hover {
-  background: var(--highlight);
+  background: var(--zebra-highlights);
   color: var(--foregrounddark);
 }
 
@@ -452,7 +452,7 @@ main {
 .forecast-day {
   margin: 0;
   font-weight: bold;
-  color: var(--highlight);
+  color: var(--zebra-highlights);
   font-size: 1.1rem;
 }
 
