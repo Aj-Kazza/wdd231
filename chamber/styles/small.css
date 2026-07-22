@@ -464,7 +464,7 @@ main {
 .forecast-day {
   margin: 0;
   font-weight: bold;
-  color: var(--zebra-highlights);
+  color: var(--dark);
   font-size: 1.1rem;
 }
 
